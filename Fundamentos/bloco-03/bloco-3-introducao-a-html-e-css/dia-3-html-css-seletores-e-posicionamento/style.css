@@ -1,27 +1,36 @@
-.caixa {
-    color: white;
-    display: inline-block;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: top;
+.super-mario {
+    position: absolute;
+    width: 200px;
+    z-index: 1;
   }
   
-  .width-and-height {
-    height: 50px;
-    width: 50px;
+  .goomba {
+    position: absolute;
+    width: 100px;
+    top: 340px;
+    left: 120px;
+    z-index: 2;
   }
   
-  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
-  .padding {
-    padding: 20px;
+  .baloon {
+      top: 100px;
+      left: 300px;
+      position: absolute;
+      z-index: 4;  
   }
   
-  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
-  .margin {
-    margin: 30px;
+  .speach {
+    top: 140px;
+    left: 320px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 5;
   }
   
-  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
-  .border {
-    border: 5px solid black;
+  .bowser {
+    top: 220px;
+    left: 580px;
+    position: absolute;  
+    width: 200px;
+    z-index: 3;
   }
