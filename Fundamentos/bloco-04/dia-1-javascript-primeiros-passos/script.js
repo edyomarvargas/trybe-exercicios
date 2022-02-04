@@ -127,3 +127,33 @@ else {
 }
 
 console.log(nota);
+
+
+// Item 8
+
+let firstNum = 12;
+let secondNum = 19;
+let thirdNum = 21;
+
+if (firstNum % 2 == 0 || secondNum % 2 == 0 || thirdNum % 2 == 0) {
+    console.log(true);
+}
+else {
+    console.log(false);
+}
+
+
+// Item 9
+
+let primeiroNum = 15;
+let segundoNum = 18;
+let terceiroNum = 22;
+
+if (primeiroNum % 2 == 1 || segundoNum % 2 == 1 || terceiroNum % 2 == 1) {
+    console.log(true);
+}
+else {
+    console.log(false);
+}
+
+
