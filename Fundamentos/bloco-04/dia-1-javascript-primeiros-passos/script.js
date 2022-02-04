@@ -157,3 +157,82 @@ else {
 }
 
 
+// Item 10
+
+const custo = 30;
+const precoVenda = 75;
+
+let numeroVendas = 1000;
+let custoTotal = custo * 1.2;
+let lucro = numeroVendas * (precoVenda - custoTotal); 
+
+if (custo < 0 || precoVenda < 0) {
+    console.log('valor de entrada incorreto');
+}
+else {
+    console.log(lucro);
+}
+
+
+// Item 11
+
+let salarioBruto = 4500;
+let salarioBase;
+let salarioLiquido;
+let aliquotaINSS;
+let aliquotaIR;
+let parcelaIR;
+
+if (salarioBruto <= 1556.94) {
+    aliquotaINSS = 0.08;
+    salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
+}
+else if (salarioBruto <= 2594.92) {
+    aliquotaINSS = 0.09;
+    salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
+}
+else if (salarioBruto <= 5189.82) {
+    aliquotaINSS = 0.11;
+    salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
+}
+else {
+    salarioBase = salarioBruto - 570.88;
+}
+
+if (salarioBase <= 1903.98) {
+    salarioLiquido = salarioBase;
+}
+else if (salarioBase <= 2826.65) {
+    aliquotaIR = 0.075;
+    parcelaIR = 142.80;
+    salarioLiquido = salarioBase - ((salarioBase * aliquotaIR) - parcelaIR);
+}
+else if (salarioBase <= 3751.05) {
+    aliquotaIR = 0.15;
+    parcelaIR = 354.80;
+    salarioLiquido = salarioBase - ((salarioBase * aliquotaIR) - parcelaIR);
+}
+else if (salarioBase <= 4664.68) {
+    aliquotaIR = 0.225;
+    parcelaIR = 636.13;
+    salarioLiquido = salarioBase - ((salarioBase * aliquotaIR) - parcelaIR);
+}
+else {
+    aliquotaIR = 0.275;
+    parcelaIR = 869.36;
+    salarioLiquido = salarioBase - ((salarioBase * aliquotaIR) - parcelaIR);
+}
+
+let pagamentoTrybe;
+
+if (salarioBruto >= 3000) {
+    pagamentoTrybe = salarioBruto * 0.17;
+}
+else {
+    pagamentoTrybe = 0;
+}
+
+const salarioFinal = salarioLiquido - pagamentoTrybe;
+
+console.log(salarioLiquido);
+console.log(salarioFinal);
