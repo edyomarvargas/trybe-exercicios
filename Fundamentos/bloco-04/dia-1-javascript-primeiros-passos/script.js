@@ -85,3 +85,45 @@ else if (anguloA + anguloB + anguloC == 180) {
 else {
     console.log(false);
 }
+
+
+// Item 6
+
+const pawn = 'moves forward one square at a time';
+const bishop = 'moves diagonally as many squares as it likes';
+const knight = 'moves in an L-shape';
+const rook = 'moves like a + sign, as many squares as it likes';
+const queen = 'moves like a bishop and a rook combined';
+const king = 'moves only one square in any direction';
+
+let chessPiece = knight;
+
+console.log(chessPiece);
+
+// Item 7
+
+let nota = 85;
+
+if (nota > 100 || nota < 0) {
+    nota = 'nota incorreta';
+}
+else if (nota >= 90) {
+    nota = 'A';
+}
+else if (nota >= 80) {
+    nota = 'B';
+}
+else if (nota >= 70) {
+    nota = 'c';
+}
+else if (nota >= 60) {
+    nota = 'D';
+}
+else if (nota >= 50) {
+    nota = 'E';
+}
+else {
+    nota = 'F';
+}
+
+console.log(nota);
