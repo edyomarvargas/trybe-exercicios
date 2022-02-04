@@ -67,3 +67,31 @@ else {
 
 
 // Item 7
+
+let menorNumero = numbers[0];
+
+for (i = 1; i < numbers.length; i++) {
+    if (numbers[i] < menorNumero) {
+        menorNumero = numbers[i];
+    }
+}
+
+console.log(menorNumero);
+
+
+// Item 8
+
+let myArr = [];
+
+for (i = 1; i <= 25; i++) {
+    myArr.push(i);
+}
+
+console.log(myArr);
+
+
+// Item 9
+
+for (i = 0; i < myArr.length; i++) {
+    console.log(myArr[i] / 2);
+}
