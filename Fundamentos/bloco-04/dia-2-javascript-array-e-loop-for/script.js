@@ -19,3 +19,20 @@ console.log(soma);
 
 
 // Item 3
+
+const media = soma / numbers.length;
+
+console.log(media);
+
+
+// Item 4
+
+if (media > 20) {
+    console.log('valor maior que 20');
+}
+else {
+    console.log('valor igual ou menor a 20');
+}
+
+
+// Item 5
