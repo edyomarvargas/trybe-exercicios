@@ -36,3 +36,34 @@ else {
 
 
 // Item 5
+
+let maiorNumero = numbers[0];
+
+for (i = 1; i < numbers.length; i++) {
+    if (numbers[i] > maiorNumero) {
+        maiorNumero = numbers[i];
+    }
+}
+
+console.log(maiorNumero);
+
+
+// Item 6
+
+let impares = 0;
+
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 1) {
+        impares++;
+    }
+}
+
+if (impares == 0) {
+    console.log('nenhum valor ímpar encontrado');
+}
+else {
+    console.log(impares);
+}
+
+
+// Item 7
