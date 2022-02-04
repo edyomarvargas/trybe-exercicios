@@ -68,3 +68,20 @@ else if (value < 0) {
 else {
     console.log('zero');
 }
+
+
+// Item 5
+
+const anguloA = 30;
+const anguloB = 60;
+const anguloC = 90;
+
+if (anguloA <= 0 || anguloB <= 0 || anguloC <= 0) {
+    console.log('ângulo inválido');
+}
+else if (anguloA + anguloB + anguloC == 180) {
+    console.log(true);
+}
+else {
+    console.log(false);
+}
