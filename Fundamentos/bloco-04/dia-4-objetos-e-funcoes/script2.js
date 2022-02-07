@@ -1,4 +1,4 @@
-// Exercícios parte 1 
+// Exercícios parte 1 (Objetos e For/In)
 
 // Item 1
 
@@ -79,5 +79,41 @@ leitor['livrosFavoritos'].push(
 
 // Item 8
 
-console.log(leitor['nome'] + ' tem ' + leitor['livrosFavoritos'].length + ' livros favoritos.');
+// console.log(leitor['nome'] + ' tem ' + leitor['livrosFavoritos'].length + ' livros favoritos.');
+
+
+// Parte 2 (Funções)
+
+// Item 1
+
+function verificaPalindromo(palavra) {
+    let separaPalavra = palavra.split('');
+    let ehPalindromo = true;
+    for (i = 0; i < separaPalavra.length; i += 1) {
+        if (separaPalavra[i] !== separaPalavra[(separaPalavra.length - 1) - i]) {
+            ehPalindromo = false;
+        }
+    }
+    return ehPalindromo;
+}
+// console.log(verificaPalindromo('rodador'));
+
+
+// Item 2
+
+function getIndex(arr) {
+    let maxNumber = arr.reduce(function (a, b) {
+    return Math.max(a, b);
+    });
+
+    return arr.indexOf(maxNumber);
+}
+
+console.log(getIndex([2, 3, 6, 7, 10, 1]));
+
+
+
+
+
+
 
