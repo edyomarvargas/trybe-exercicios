@@ -8,10 +8,22 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
 
-  console.log('Bem-vinda ' + info.personagem);
+//   console.log('Bem-vinda ' + info.personagem);
 
   // Item 2
 
   info['recorrente'] = 'Sim';
 
-  console.log(info);
+//   console.log(info);
+
+  // Item 3
+
+for (key in info) {
+    // console.log(key);
+}
+
+// Item 4
+
+for (key in info) {
+    console.log(info[key]);
+}
