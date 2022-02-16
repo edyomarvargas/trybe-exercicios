@@ -90,18 +90,28 @@
 		newSection2.appendChild(image);
 
 		let newList = document.createElement('ul');
+		newList.className = 'list-items';
 		newSection3.appendChild(newList);
 		let arrayList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
 		for (element in arrayList) {
 			let listItem = document.createElement('li');
 			listItem.innerText = arrayList[element];
-			newSection3.appendChild(listItem);
+			newList.appendChild(listItem);
 		}
 
 		for (let index = 1; index <= 3; index += 1) {
 			let smallTitle = document.createElement('h3');
+			smallTitle.className = 'description';
 			main.appendChild(smallTitle);
 		}
+
+		newTitle.className = 'title';
+		main.removeChild(newSection2);
+
+		newSection3.style.margin = 'auto';
+		
+		newList.lastChild.remove();
+		newList.lastChild.remove();
 	</script>
 </body>
 
