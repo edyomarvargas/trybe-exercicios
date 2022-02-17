@@ -49,3 +49,12 @@ function addDays(daysList) {
 
 addDays(dezDaysList);
 
+function createHolidayBtn (buttonName) {
+	let getDiv = document.querySelector('.buttons-container');
+	let newButton = document.createElement('button');
+	newButton.id = 'btn-holiday';
+	newButton.innerText = buttonName;
+	getDiv.appendChild(newButton);
+}
+
+createHolidayBtn("Feriados");
