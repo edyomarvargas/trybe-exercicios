@@ -49,7 +49,7 @@ function addDays(daysList) {
 
 addDays(dezDaysList);
 
-function createHolidayBtn (buttonName) {
+function createHolidayBtn(buttonName) {
 	let getDiv = document.querySelector('.buttons-container');
 	let newButton = document.createElement('button');
 	newButton.id = 'btn-holiday';
@@ -58,3 +58,20 @@ function createHolidayBtn (buttonName) {
 }
 
 createHolidayBtn("Feriados");
+
+function changeHolidaysColor() {
+	let holidayBtn = document.querySelector('#btn-holiday');
+	holidayBtn.addEventListener('click', function () {
+		let holidays = document.querySelectorAll('.holiday');
+
+		for (let index = 0; index < holidays.length; index += 1) {
+			if (holidays[index].style.background = 'rgb(238,238,238)') {
+				holidays[index].style.background = 'red';
+			}
+			else {
+				holidays[index].style.background = 'rgb(238,238,238)';
+			}
+		} 
+	})
+}
+changeHolidaysColor(); 
