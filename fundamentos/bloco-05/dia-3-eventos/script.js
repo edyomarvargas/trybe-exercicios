@@ -75,3 +75,14 @@ function changeHolidaysColor() {
 	})
 }
 changeHolidaysColor(); 
+
+function createFridayBtn (buttonName) {
+	let getDiv = document.querySelector('.buttons-container');
+	let newButton = document.createElement('button');
+	newButton.id = 'btn-friday';
+	newButton.innerText = buttonName;
+	getDiv.appendChild(newButton);
+}
+
+createFridayBtn('Sexta-Feira');
+
