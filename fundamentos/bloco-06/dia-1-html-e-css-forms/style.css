@@ -1,0 +1,33 @@
+main {
+	border: solid black 3px;
+	padding: 20px;
+}
+
+#email-container {
+  margin-top: 10px;
+}
+
+#input-name {
+	margin-left: 5px;
+}
+
+#radio-container {
+	margin-top: 15px;
+}
+
+#input-text-area {
+	resize: none;
+}
+
+#checkbox {
+	display: block;
+}
+
+#date-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#buttons-container {
+	margin-top: 20px;
+}

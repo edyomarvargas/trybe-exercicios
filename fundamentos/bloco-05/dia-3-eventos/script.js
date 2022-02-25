@@ -104,3 +104,4 @@ function changeTextFriday() {
 }
 
 changeTextFriday();
+
