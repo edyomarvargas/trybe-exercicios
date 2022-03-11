@@ -103,4 +103,28 @@ const booksOrdered = (array) => {
 	console.log(array.sort((a, b) => b.releaseYear - a.releaseYear));
 }
 
-booksOrdered(books);
+// booksOrdered(books);
+
+
+// 5
+
+function everyoneWasBornOnSecXX(array) {
+	return array.every((element) => {
+		element.author.birthYear >= 1901 && element.author.birthYear <= 2000;
+	});
+}
+
+// console.log(everyoneWasBornOnSecXX(books));
+
+
+6
+
+function someBookWasReleaseOnThe80s(array) {
+	return array.some((book) => {
+		return book.releaseYear >= 1980 && book.releaseYear <= 1989;
+	});
+}
+
+console.log(someBookWasReleaseOnThe80s(books));
+
+
