@@ -63,10 +63,11 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  const formatedBookNames = (array) => {
-    return array.map((element) => {
-        return `${element.name} - ${element.genre} - ${element.author.name}`
-    })
+  const nameAndAge = (array) => {
+      let newObj = array.map((element) => {
+          return {age: element.releaseYear - element.author.birthYear, author: element.author.name}
+      })
+      return newObj.sort((a, b) => a.age - b.age);
   }
 
-  console.log(formatedBookNames(books));
+  console.log(nameAndAge(books));
