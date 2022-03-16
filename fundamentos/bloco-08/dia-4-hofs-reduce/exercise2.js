@@ -64,7 +64,9 @@ const books = [
 // Adicione o código do exercício aqui:
 
 const reduceNames = () => {
-    return books.reduce((accumulator, result) => console.log(accumulator));
+    return books.reduce((accumulator, currentValue) => {
+        return accumulator.name + currentValue.author.name;
+    }, "");
 }
 
-reduceNames()
+console.log(reduceNames())
