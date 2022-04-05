@@ -7,12 +7,14 @@ const Task = (value) => {
   );
 }
 
-function App() {
-  return (
-    <div className="App">
-      <Task />
-    </div>
-  );
+const tarefas = ['Estudar', 'Responder e-mails', 'Arrumar a casa', 'Trabalhar'];
+
+class App extends React.Component {
+  render() {
+    return (
+      <ul> {tarefas.map((tarefa) => Task(tarefa))} </ul>
+    );
+  }
 }
 
 export default App;
