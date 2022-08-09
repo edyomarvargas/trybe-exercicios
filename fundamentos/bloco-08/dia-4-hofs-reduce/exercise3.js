@@ -62,7 +62,7 @@ const books = [
 ];
 
 const averageAge = () => {
-	return books.filter((book) => book.releaseYear)
+
 }
 
 console.log(averageAge());
