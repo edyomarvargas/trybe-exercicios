@@ -50,4 +50,24 @@ export default class Student {
 
     this._worksGrades = newGrades;
   }
+
+  sumGrades(): number {
+    const grades = [... this._examsGrades, ... this._worksGrades];
+    let totalGrades = 0;
+    grades.forEach((grade) => totalGrades += grade);
+
+    return totalGrades;
+  }
+
+  avgGrades(): number {
+    const grades = this.sumGrades();
+    const gradesAmount = this._examsGrades.length + this._worksGrades.length;
+    const avgGrades = grades / gradesAmount;
+
+    return avgGrades;
+  }
 }
+
+const personOne = new Student('202001011', 'Maria da Silva', [25, 20, 23, 23], [45, 45]);
+
+console.log(personOne.avgGrades());
